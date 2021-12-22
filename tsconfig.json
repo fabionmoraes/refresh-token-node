@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
+    "allowJs": true,
+    "strict": true,
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "typeRoots": ["./src/@types", "node_modules/@types"],
+    "outDir": "./dist",
+    "rootDir": "./",
+    "baseUrl": "./src",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@modules/*": ["modules/*"],
+      "@config/*": ["config/*"],
+      "@provider/*": ["provider/*"],
+      "@shared/*": ["shared/*"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}
